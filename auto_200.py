@@ -86,8 +86,7 @@ def manifestos_set (driver, data_inicio, data_fim, stop_event):
 
     #actions = ActionChains(driver)
     #actions.send_keys("7").perform()
-    time.sleep(25)
-
+    time.sleep(5)
 def renomear_arquivo(pasta_download, nome_novo):
     # Código para renomear o arquivo mais recente na pasta de download
     try:
@@ -186,7 +185,6 @@ def main (stop_event = None):
 
             # Código que chama a função de renomear o arquivo baixado
             renomear_arquivo(download_folder, nome_arquivo_mes)
-            time.sleep(5)
             if stop_event and stop_event.is_set(): raise InterruptedError
             
         

@@ -155,7 +155,7 @@ def main (stop_event = None):
             mes = primeiro_dia_mes_atual.month - i
 
             if mes <= 1:
-                mes = 12 + mes
+                mes += 12 + mes
                 ano -= 1
 
             primeiro_dia = datetime(ano, mes, 1)

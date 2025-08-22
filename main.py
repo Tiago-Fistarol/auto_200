@@ -209,6 +209,7 @@ class App(ctk.CTk):
         self.title("Automação 200")
         self.geometry("600x600")
         self.grid_columnconfigure(0, weight=1)
+
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
 
@@ -257,7 +258,7 @@ class App(ctk.CTk):
 
         sys.stdout = TextboxRedirector(self)
 
-        """Código feito para quando a tela for iniciada ela operar o sistema automaticamente"""
+        #Código feito para quando a tela for iniciada ela operar o sistema automaticamente
         self.start_automation()
 
         self.log("Painel de controle iniciado. Pronto para receber comandos.")
